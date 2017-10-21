@@ -1,28 +1,17 @@
 # motion-generated-sound
-/**
- * Processing Sound Library, Example 3
- * 
- * This example shows how to make a simple sampler and sequencer 
- * with the Sound library. In this sketch, five different samples are 
- * loaded and played back at different pitches, in this case five 
- * different octaves. The sequencer triggers an event every 200-1000 
- * milliseconds randomly. Each time a sound is played a colored 
- * rect with a random color is displayed.
- */
+
 
 import processing.sound.*;
 import processing.serial.*;
 import cc.arduino.*;
 Serial port;
-//this object class Arduino
-//represents guess what? Your board
+
 Arduino arduino;
 TriOsc triangle;
 SinOsc sine;
 Reverb reverb;
 LowPass lowPass;
-//like in an arduino sketch it's good to
-//use variables for pin numbers 
+
 
 int sensorPin = 2;
 int fsrPin =3;
